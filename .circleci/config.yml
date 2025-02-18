@@ -1,0 +1,13 @@
+version: 2.1
+
+simple-job:
+  docker:
+    - image: cimg/base: stable
+  steps:
+    - run: echo "hello"
+
+
+workflows:
+  main:
+    jobs:
+      - simple-job
