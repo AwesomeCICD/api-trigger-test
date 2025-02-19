@@ -1,14 +1,116 @@
 version: 2.1
 
+parameters:
+  param1:
+    type: string
+    default: "param 1"
+  param2:
+    type: string
+    default: "param 2"
+  param3:
+    type: string
+    default: "param 3"
+  param4:
+    type: string
+    default: "param 4"
+  param5:
+    type: string
+    default: "param 5"
+  param6:
+    type: string
+    default: "param 6"
+  param7:
+    type: string
+    default: "param 7"
+  param8:
+    type: string
+    default: "param 8"
+  param9:
+    type: string
+    default: "param 9"
+  param10:
+    type: string
+    default: "param 10"
+  param11:
+    type: string
+    default: "param 11"
+  param12:
+    type: string
+    default: "param 12"
+  param13:
+    type: string
+    default: "param 13"
+  param14:
+    type: string
+    default: "param 14"
+  param15:
+    type: string
+    default: "param 15"
+  param16:
+    type: string
+    default: "param 16"
+  param17:
+    type: string
+    default: "param 17"
+  param18:
+    type: string
+    default: "param 18"
+  param19:
+    type: string
+    default: "param 19"
+  param20:
+    type: string
+    default: "param 20"
+  param21:
+    type: string
+    default: "param 21"
+  param22:
+    type: string
+    default: "param 22"
+  param23:
+    type: string
+    default: "param 23"
+  param24:
+    type: string
+    default: "param 24"
+  param25:
+    type: string
+    default: "param 25"
+
 jobs:
   simple-job:
     docker:
       - image: cimg/base:stable
     steps:
       - run: echo "hello"
-
+      - run: echo << pipeline.parameters.param1 >>
+      - run: echo << pipeline.parameters.param2 >>
+      - run: echo << pipeline.parameters.param3 >>
+      - run: echo << pipeline.parameters.param4 >>
+      - run: echo << pipeline.parameters.param5 >>
+      - run: echo << pipeline.parameters.param6 >>
+      - run: echo << pipeline.parameters.param7 >>
+      - run: echo << pipeline.parameters.param8 >>
+      - run: echo << pipeline.parameters.param9 >>
+      - run: echo << pipeline.parameters.param10 >>
+      - run: echo << pipeline.parameters.param11 >>
+      - run: echo << pipeline.parameters.param12 >>
+      - run: echo << pipeline.parameters.param13 >>
+      - run: echo << pipeline.parameters.param14 >>
+      - run: echo << pipeline.parameters.param15 >>
+      - run: echo << pipeline.parameters.param16 >>
+      - run: echo << pipeline.parameters.param17 >>
+      - run: echo << pipeline.parameters.param18 >>
+      - run: echo << pipeline.parameters.param19 >>
+      - run: echo << pipeline.parameters.param20 >>
+      - run: echo << pipeline.parameters.param21 >>
+      - run: echo << pipeline.parameters.param22 >>
+      - run: echo << pipeline.parameters.param23 >>
+      - run: echo << pipeline.parameters.param24 >>
+      - run: echo << pipeline.parameters.param25 >>
 
 workflows:
   main:
     jobs:
       - simple-job
+
