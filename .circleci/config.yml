@@ -108,6 +108,7 @@ jobs:
       - run: echo << pipeline.parameters.param23 >>
       - run: echo << pipeline.parameters.param24 >>
       - run: echo << pipeline.parameters.param25 >>
+      - run: - run: echo "<<pipeline.parameters.param1>> <<pipeline.parameters.param2>> <<pipeline.parameters.param3>> <<pipeline.parameters.param4>> <<pipeline.parameters.param5>> <<pipeline.parameters.param6>> <<pipeline.parameters.param7>> <<pipeline.parameters.param8>> <<pipeline.parameters.param9>> <<pipeline.parameters.param10>> <<pipeline.parameters.param11>> <<pipeline.parameters.param12>> <<pipeline.parameters.param13>> <<pipeline.parameters.param14>> <<pipeline.parameters.param15>> <<pipeline.parameters.param16>> <<pipeline.parameters.param17>> <<pipeline.parameters.param18>> <<pipeline.parameters.param19>> <<pipeline.parameters.param20>> <<pipeline.parameters.param21>> <<pipeline.parameters.param22>> <<pipeline.parameters.param23>> <<pipeline.parameters.param24>> <<pipeline.parameters.param25>>"
 
 workflows:
   main:
