@@ -9,7 +9,7 @@ curl -X POST https://circleci.com/api/v2/project/github/AwesomeCICD/api-trigger-
   --data '{
   "definition_id": "323ab245-b4a7-58e1-aaba-12ab89350e4c",
   "config": {"branch": "main"},
-  "checkout": {"branch": "checkout"},
+  "checkout": {"branch": "main"},
   "parameters": {
     "param1": "Automation",
     "param2": "in",
