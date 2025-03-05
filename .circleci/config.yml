@@ -82,7 +82,7 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      - run: echo "hello"
+      - run: echo "hello.."
       - run: echo << pipeline.parameters.param1 >>
       - run: echo << pipeline.parameters.param2 >>
       - run: echo << pipeline.parameters.param3 >>
